@@ -1,0 +1,17 @@
+<html>
+<body>
+<h2>Test</h2>
+
+<p>The total cost is: $</p>
+<p id = "demo"></p>
+
+<script>
+function totalCost(n, o){
+	const newCost = 3.00;
+	const oldCost = 2.00;
+	return (newCost * n) + (oldCost * o);
+}
+document.getElementById("demo").innerHTML = totalCost(4,5);
+</script>
+</body>
+</html>

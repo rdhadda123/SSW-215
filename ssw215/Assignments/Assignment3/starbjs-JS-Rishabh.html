@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--Styling webpage using CSS-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Starbucks, Los Angeles</title>
+</head>
+
+<body>
+<h1 id="uniquehd">Welcome to Starbucks, Los Angeles</h1>
+  <p>Starbucks Corporation is an American multinational chain of coffeehouses
+  and roastery reserves headquartered in Seattle, Washington. As the world's largest
+  coffeehouse chain, Starbucks is seen to be the main representation of the United States'second wave of coffee culture. As of early 2020, the company operates over 30,000 locations worldwide in more than 70 countries. Starbucks locations serve hot and cold drinks,whole-bean coffee, microground instant coffee known as VIA, espresso, caffe latte, full- and loose-leaf teas including Teavana tea products, Evolution Fresh juices, Frappuccino beverages, La Boulange pastries, and snacks including items such as chips and crackers; some offerings (including their annual fall launch of the Pumpkin Spice Latte) are seasonal or specific to the locality of the store.</p>
+  <h3 >Our main menu categories are: </h3>
+    <!--use JavaScript array to list the menu in this category (i.e., replace unordered list)-->
+  <ol id = "menu">
+    <script>
+      const items = ["Coffee", "Food", "At Home Coffee"];
+      count = 1
+      let item = "";
+      for (let x of items){
+        item += count + "." + " " + x + "<br>";
+        count++;
+      }
+      document.getElementById("menu").innerHTML = item;
+    </script>
+  </ol>
+  <h3>Our customers’ top three favorites Hot Coffees are: </h3>
+     <!--use JavaScript array to list the menu in this category (i.e., replace unordered list)-->
+  <ol id = "coffeeList">
+    <script>
+        const coffees = ["Caffe Americano", "Cappuccino", "Expresso"];
+        count = 1
+        let coffee = "";
+        for (let x of coffees){
+          coffee += count + "." + " " + x + "<br>";
+          count++;
+        }
+        document.getElementById("coffeeList").innerHTML = coffee;
+    </script>
+  </ol>
+
+  <h3>Why not give our delicious food menu a try also?</h3>
+     <!--use JavaScript array to list the menu in this category (i.e., replace unordered list)-->
+  <ol id = "foodList">
+    <script>
+        const foodItem = ["Ham and Swiss Panini", "Cripsy Grilled Cheese Sandwhich", "Chicken Caprese Panini"];
+        count = 1
+        let food = "";
+        for (let x of foodItem){
+          food += count + "." + " " + x + "<br>";
+          count++;
+        }
+        document.getElementById("foodList").innerHTML = food;
+    </script>
+  </ol>
+
+  <h4 id=priceheader>Food Price List</h4>
+  <table class="center">
+    <tr>
+      <th>Item Number</th>
+      <th>Food</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Ham and Swiss Panini</td>
+      <td>$9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cripsy Grilled Cheese Sandwhich</td>
+      <td>$15</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Chicken Caprese Panini</td>
+      <td>$12</td>
+    </tr>
+  </table>
+</body>
+</html>

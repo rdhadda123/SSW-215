@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id = "demo"></p>
+        <script>
+            var a = prompt("Enter the number: ");
+            a = parseInt(n);
+            if (a == 0)
+                alert("The number is zero.");
+            if (a%2 == 0)
+                alert("The number is even");
+            else
+                alert("The number is odd.");
+
+            Document
+        </script>
+    </body>
+</html>

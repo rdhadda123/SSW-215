@@ -1,0 +1,50 @@
+body{
+    background-color: linen;
+}
+
+#uniquehd{
+    color: #066104;
+    margin-left: 40px;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+#firstH3{
+    color: #066104;
+}
+
+#secondH3{
+    color: #066104;
+}
+
+#thirdH3{
+    color: green;
+}
+
+.outofstock{
+    text-decoration: line-through;
+}
+
+.soonoutofstock{
+    color: red;
+}
+
+#priceheader{
+    text-align: center;
+    color: maroon;
+}
+
+.center{
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: auto;
+}
+
+td{
+    border: 1px solid black;
+}

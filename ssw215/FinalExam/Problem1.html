@@ -1,0 +1,24 @@
+<html>
+  <body>
+  <h2>Problem 1</h2>
+
+    <p>Is number even or odd?</p>
+    <p id = "demo"></p>
+
+    <script>
+      var num = prompt("Enter number: ");
+      function num_type(number) {
+        if (num % 2 === 0){ 
+          alert("The number is even.");
+          return "even";
+        }
+        else{ 
+          alert("The number is odd.");
+          return "odd";
+        }
+      }
+
+      document.getElementById("demo").innerHTML = "The number " + num + " is " + num_type(num);
+    </script>
+  </body>
+</html>
